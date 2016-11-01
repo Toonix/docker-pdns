@@ -55,7 +55,7 @@ RUN chown -R www-data:www-data /var/www/html/ \
 COPY assets/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY start.sh /start.sh
 
-EXPOSE 53 80
+EXPOSE 53 80 8081
 EXPOSE 53/udp
 
 CMD ["/bin/bash", "/start.sh"]

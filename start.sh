@@ -45,6 +45,8 @@ sed -i "s/{{PDNS_DISTRIBUTOR_THREADS}}/${PDNS_DISTRIBUTOR_THREADS}/" /etc/powerd
 sed -i "s/{{PDNS_RECURSIVE_CACHE_TTL}}/${PDNS_RECURSIVE_CACHE_TTL}/" /etc/powerdns/pdns.conf
 sed -i "s/{{PDNS_ALLOW_RECURSION}}/${PDNS_ALLOW_RECURSION}/" /etc/powerdns/pdns.conf
 sed -i "s/{{PDNS_RECURSOR}}/${PDNS_RECURSOR}/" /etc/powerdns/pdns.conf
+sed -i "s/{{PDNS_API}}/${PDNS_API}/" /etc/powerdns/pdns.conf
+sed -i "s/{{PDNS_API_KEY}}/${PDNS_API_KEY}/" /etc/powerdns/pdns.conf
 
 ### POWERADMIN
 sed -i "s/{{MYSQL_HOST}}/${MYSQL_HOST}/" /var/www/html/inc/config.inc.php
