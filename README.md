@@ -29,3 +29,7 @@ These options can be set:
 - **POWERADMIN_HOSTMASTER**: default hostmaster (Default: "", Possible Values: "<email>")
 - **POWERADMIN_NS1**: default Nameserver 1 (Default: "", Possible Values: "<domain>")
 - **POWERADMIN_NS2**: default Nameserver 2 (Default: "", Possible Values: "<domain>")
+
+RFC2136
+Add TSIG to you Database
+insert into tsigkeys (name, algorithm, secret) values ('Name', 'hmac-md5', 'Password');
